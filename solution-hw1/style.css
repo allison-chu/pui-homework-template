@@ -1,0 +1,25 @@
+h1 {
+    font-size: 25px;
+  }
+
+h2 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .logo {
+    size: 300px;
+  }
+
+  .product-image{
+    size: 500px;
+  }
+
+  hr{
+    height: 2px;
+    background-color: black;
+    
+  }
