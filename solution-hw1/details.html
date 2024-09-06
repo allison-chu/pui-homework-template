@@ -3,23 +3,38 @@
   <meta charset="UTF-8">
   <header>
     <link rel="stylesheet" href="style.css">
-    <img src="assets/logo/logo-01.svg" alt="Logo" class="logo">
+    <img src="../assets/logo/logo-01.svg" alt="Logo" class="logo">
   </header>
+  <hr>
+  <div style="text-align:center">
   <title>Products</title>
   
   <body>
 
     <h1>PRODUCTS</h1>
-    <h1>CART</h1>
-    <h2>Shopping Cart</h2><br>
-    <b>Original Cinnaon Roll</b><br>
-    <b>Glazing: Keep Original</b><br>
-    <b>Pack Size: 1</b><br><br>
-    <b>$2.49</b>
+    <a href="./cart.html"><mark>CART</mark></a><br><br><br>
+    <p>Customize our delicious, hand-made cinnamom roll to your liking! </p>
+    <img src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll" class="product-image-detail">
+    <p>Customize</b><br>
+    <p>$ 3.99</b><br><br><br>
+      <p class="left">Glazing:</p>
+      <form action="/action_page.php">
+        <select name="glazing">
+            <option value="Keep Glazing">Keep Glazing</option>
+        </select>
+        <br><br>
+      </form><br>
+      <p class="left">Pack Size:</p>
+      <form action="/action_page.php">
+        <select name="pack-size">
+            <option value="1">1</option>
+        </select>
+        <br><br>
+      </form>
 
-    <p>
-        And I can link to <a href="./cart.html">other pages.</a>
-    </p>
+    
 
+  
   </body>
+</div>
 </html>
