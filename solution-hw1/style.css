@@ -60,7 +60,6 @@ h2 {
     background-color: yellow;
     font-weight: bold;
 
-
   }
 .highlight{
     padding: 5px;
@@ -69,3 +68,6 @@ h2 {
     margin-right: auto;
 }
 
+.center{
+    text-align: center;
+}
