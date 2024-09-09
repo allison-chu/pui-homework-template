@@ -68,6 +68,26 @@ h2 {
     margin-right: auto;
 }
 
+.highlight-text{
+    background-color: yellow;
+}
+
 .center{
     text-align: center;
+}
+
+.parent {
+    text-align: center; 
+}
+
+.centered-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    text-align: left; 
+    width: fit-content;
+    margin-left: auto; 
+    margin-right: auto; 
 }
