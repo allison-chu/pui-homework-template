@@ -1,3 +1,4 @@
+
 h1 {
     font-size: 15px;
   }
@@ -13,13 +14,12 @@ h2 {
   }
 
   .logo {
-    width: 200px;
-    height: 200px;
+    width: 400px;
   }
 
   .product-image{
-    width: 150px;
-    height: 150px;
+    width: 400px;
+    height: 400px;
     border:2px solid #000000; margin:5px;
   }
 
@@ -36,21 +36,36 @@ h2 {
 
   .checkout{
     border:2px solid #000000; width: fit-content; 
-    align: center;
-    
+    text-align: center;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  p:hover, h1:hover, a:hover {
-    background-color: yellow;
-    padding: 0;
-  }
 
   .product-image-detail{
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
     border:2px solid #000000; margin:5px;
   }
 
-  .left{
-    text-align: center-left;
+  .product-image-cart{
+    width: 200px;
+    height: 200px;
+    border:2px solid #000000; margin:5px;
   }
+
+
+  .highlight:hover{
+    background-color: yellow;
+    font-weight: bold;
+
+
+  }
+.highlight{
+    padding: 5px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
