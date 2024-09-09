@@ -1,4 +1,5 @@
 
+/** Headers and text**/
 h1 {
     font-size: 15px;
   }
@@ -13,6 +14,7 @@ h2 {
     padding: 0;
   }
 
+/** Images and Product Details **/
   .logo {
     width: 400px;
   }
@@ -40,6 +42,7 @@ h2 {
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    background-color: yellow;
   }
 
 
@@ -55,12 +58,14 @@ h2 {
     border:2px solid #000000; margin:5px;
   }
 
-
-  .highlight:hover{
+.highlight:hover{
     background-color: yellow;
-    font-weight: bold;
-
   }
+
+  .highlight:hover  .bold-text{
+    font-weight: bold;
+  }
+
 .highlight{
     padding: 5px;
     max-width: fit-content;
@@ -78,6 +83,8 @@ h2 {
 
 .parent {
     text-align: center; 
+    display: flex;
+    flex-direction: column;
 }
 
 .centered-content {
@@ -86,8 +93,32 @@ h2 {
 }
 
 .left {
-    text-align: left; 
+    text-align: center; 
+
+}
+
+#header {
+    width: 100%;
+    height: 30px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
     width: fit-content;
     margin-left: auto; 
     margin-right: auto; 
+    align-items: center;
+}
+
+#container p {
+    margin-right: 15px; 
+}
+
+.price-text{
+    text-align: left;
+}
+
+.bold-text{
+    text-align: left;
 }
