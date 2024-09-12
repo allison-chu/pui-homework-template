@@ -87,6 +87,14 @@ h2 {
     flex-direction: column;
 }
 
+.column {
+    flex: 0 0 48%; /* Each column takes up 48% of the container's width */
+    box-sizing: border-box; /* Ensures padding/margin don't affect the width */
+    padding: 10px;
+    background-color: lightgray;
+    margin-bottom: 10px;
+  }
+
 .centered-content {
     margin-left: auto;
     margin-right: auto;
@@ -121,4 +129,10 @@ h2 {
 
 .bold-text{
     text-align: left;
+}
+
+.nav{
+    float:right;
+    text-align: center;
+    padding: 14px 16px;
 }
