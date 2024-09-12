@@ -87,12 +87,21 @@ h2 {
     flex-direction: column;
 }
 
-.column {
-    flex: 0 0 48%; /* Each column takes up 48% of the container's width */
-    box-sizing: border-box; /* Ensures padding/margin don't affect the width */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%; 
+    margin: auto; 
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px; 
     padding: 10px;
-    background-color: lightgray;
-    margin-bottom: 10px;
+
   }
 
 .centered-content {
