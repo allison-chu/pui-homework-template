@@ -205,5 +205,20 @@ h2 {
     font-weight: bold;
 }
 
+.column-cart-checkout{
+    margin-left: 90px;
+}
+
+.intro{
+    text-align: center; /* Align text to the left */
+    font-size: 24px; /* Adjust the font size to match the image */
+    padding-left: 25px; /* Add some left padding to align with the logo */
+    margin-top: 10px; /* Add some margin to adjust vertical spacing */
+}
+
+.top-text{
+    font-size: 30px;
+    font-weight: thin;
+}
 
 
