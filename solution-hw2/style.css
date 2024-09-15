@@ -14,6 +14,10 @@ h2 {
     padding: 0;
   }
 
+  .lighter{
+    font-weight: lighter;
+  }
+
 /** Images and Product Details **/
   .logo {
     width: 400px;
@@ -217,7 +221,7 @@ h2 {
     margin-left: 90px;
 }
 
-.intro{
+.top{
     text-align: center; /* Align text to the left */
     font-size: 24px; /* Adjust the font size to match the image */
     padding-left: 25px; /* Add some left padding to align with the logo */
@@ -230,7 +234,9 @@ h2 {
 }
 
 .cart-text-total{
-    margin-right: 20px;
+    margin-right: 90px;
 }
+
+
 
 
