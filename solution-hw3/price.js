@@ -47,15 +47,18 @@ function populatePackSizeOptions()
 
 function updatePrice() 
 {
+//getting elements by id for glazing, pack size, and total price, updated what's selected and changes total price
   const glazingSelect=document.getElementById('glazing');
   const packSizeSelect=document.getElementById('pack-size');
   const totalPriceElement = document.getElementById('total-price');
   const selectedGlazingPrice = parseFloat(glazingSelect.value);
   const selectedPackSize = parseInt(packSizeSelect.value);
+  //calculations
   const totalPrice = (basePrice+selectedGlazingPrice)*selectedPackSize;
   totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
 }
 
+//updates price if new glazing or pack size is selected 
 function glazingChange(element) 
 {
   updatePrice();
