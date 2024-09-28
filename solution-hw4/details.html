@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>Details</title>
+    <link rel="stylesheet" href="style.css">
+  
+    
+  </head>
+
+
+  <!-- Navigation -->
+<div class="nav">
+  <a class="active" href="./gallery.html">PRODUCTS</a>
+  <a href="./cart.html">CART</a>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <a href="gallery.html" class="logo-link">
+      <img src="../assets/logo/logo-01.svg" alt="Logo" class="logo">
+  </a>
+
+ <!-- Horizontal Line -->
+  <div class="top-container">
+    <br><br><br>
+    <hr width="312%">
+    <br>
+    <div class="top">
+      
+      <p id="top-text">Original Cinnamon Roll</p>
+
+    </div>
+
+  </div>
+  
+</header>
+    <div class="center">
+      <div class="row">
+        <div class="column">
+          <img src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll" id="product-image-detail">
+        </div>
+<!-- I deleted the HTML hard code of the drop downs so i can dymanically do it in js -->
+        <div class="column">
+          <p>Customize our delicious, hand-made cinnamom roll to your liking! </p>
+          <br>
+            
+              <p>Glazing:</p>
+              <select id="glazing" onchange="glazingChange(this)">
+
+              </select>
+                <br><br>
+              <br>
+              <p>Pack Size:</p>
+             <select id="pack-size" onchange="packSizeChange(this)">
+
+             </select>
+                <br><br>
+                 <!-- Total and Checkout -->
+    <div id="container">
+      <p id="total-price">Total:$ 2.49   </p><br>
+      <h1 class="checkout">Add to Cart</h1>
+    </div>
+        </div>
+      </div>
+      
+      <script src="./rollsData.js"></script>
+      <script src="./price.js"></script>
+  </body>
+
+</html>

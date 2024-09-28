@@ -58,7 +58,7 @@ h2 {
   }
 
 
-  .product-image-detail{
+  #product-image-detail{
     width: 600px;
     height: 600px;
     border:2px solid #000000; margin:5px;
@@ -134,15 +134,15 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end; /* Items will start from the left */
+    justify-content: flex-end; 
     width: 60%; 
     margin: auto;
-    gap: 20px; /* Adjust gap between columns */
+    gap: 20px; 
     padding-left: 200px;
   }
   
   .column-cart-1 {
-    margin-right: 5px; /* Specifically reduce space between the first and second columns */
+    margin-right: 5px; 
   }
   
 
@@ -224,15 +224,20 @@ h2 {
 }
 
 .top{
-    text-align: center; /* Align text to the left */
-    font-size: 24px; /* Adjust the font size to match the image */
-    padding-left: 25px; /* Add some left padding to align with the logo */
-    margin-top: 10px; /* Add some margin to adjust vertical spacing */
+    text-align: center; 
+    font-size: 24px; 
+    padding-left: 25px;
+    margin-top: 10px; 
+}
+
+#top-text{
+    font-size: 25px;
+    font-weight: light;
 }
 
 .top-text{
-    font-size: 25px;
-    font-weight: light;
+  font-size: 25px;
+  font-weight: light;
 }
 
 .cart-text-total{
