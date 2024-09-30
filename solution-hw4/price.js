@@ -77,10 +77,23 @@ function updatePrice()
   const glazingSelect=document.getElementById('glazing');
   const packSizeSelect=document.getElementById('pack-size');
   const totalPriceElement = document.getElementById('total-price');
+
   const selectedGlazingPrice = parseFloat(glazingSelect.value);
   const selectedPackSize = parseInt(packSizeSelect.value);
+
+  let multiplier = selectedPackSize;
+//if statement for if pack size is 12, price is for 10, 6 -> 5
+  if (selectedPackSize === 12) 
+  {
+    multiplier = 10; 
+  } else if 
+  (selectedPackSize === 6) 
+  {
+    multiplier = 5; 
+  }
+
   //calculations
-  const totalPrice = (rollBasePrice+selectedGlazingPrice)*selectedPackSize;
+  const totalPrice = (rollBasePrice + selectedGlazingPrice) * multiplier;
   totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
 }
 
@@ -95,30 +108,27 @@ function packSizeChange(element)
   updatePrice();
 }
 
+function addCart() {
+  //getting the selected glazing and pack sizes
+  const glazingSelect = document.getElementById('glazing');
+  const packSizeSelect = document.getElementById('pack-size');
+  //declaring the selected glazing and pack size, getting from array 
+  const selectedGlazing = glazingSelect.options[glazingSelect.selectedIndex].text;
+  const selectedPackSize = parseInt(packSizeSelect.value);
+  //creating new instance of roll with all of the options that were selected
+  const newRoll = new Roll(rollType, selectedGlazing, selectedPackSize, rollBasePrice);
+  // pushes new roll to the cart
+  cart.push(newRoll);
+  console.log(cart);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   populateGlaze();
   populatePackSizeOptions();
   updatePrice();
 
-  // Get the Add to Cart button
-  const addToCartButton = document.querySelector('.checkout');
+  const addCartButton = document.querySelector('.checkout');
 
-  // Add click event listener to the button
-  addToCartButton.addEventListener('click', () => {
-      // Retrieve the selected glazing and pack size
-      const glazingSelect = document.getElementById('glazing');
-      const packSizeSelect = document.getElementById('pack-size');
-      
-      const selectedGlazing = glazingSelect.options[glazingSelect.selectedIndex].text;
-      const selectedPackSize = parseInt(packSizeSelect.value);
-
-      // Create a new instance of Roll
-      const newRoll = new Roll(rollType, selectedGlazing, selectedPackSize, rollBasePrice);
-
-      // Add the new roll to the cart
-      cart.push(newRoll);
-
-      // Log the cart contents to the console
-      console.log(cart);
-  });
+  //added event listener for adding to cart
+  addCartButton.addEventListener('click', addCart);
 });

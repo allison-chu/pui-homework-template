@@ -51,10 +51,23 @@ function updatePrice()
   const glazingSelect=document.getElementById('glazing');
   const packSizeSelect=document.getElementById('pack-size');
   const totalPriceElement = document.getElementById('total-price');
+
   const selectedGlazingPrice = parseFloat(glazingSelect.value);
   const selectedPackSize = parseInt(packSizeSelect.value);
+
+  let multiplier = selectedPackSize;
+//if statement for if pack size is 12, price is for 10, 6 -> 5
+  if (selectedPackSize === 12) 
+  {
+    multiplier = 10; 
+  } else if 
+  (selectedPackSize === 6) 
+  {
+    multiplier = 5; 
+  }
+
   //calculations
-  const totalPrice = (basePrice+selectedGlazingPrice)*selectedPackSize;
+  const totalPrice = (rollBasePrice + selectedGlazingPrice) * multiplier;
   totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
 }
 
