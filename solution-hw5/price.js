@@ -18,7 +18,6 @@ class Roll {
       this.glazing = rollGlazing;
       this.size = packSize;
       this.basePrice = basePrice;
-      this.quantity = 1; // Add quantity property
   }
 
   // Method to calculate total price

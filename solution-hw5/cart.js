@@ -1,92 +1,63 @@
-
 class Roll {
-    constructor(type, glazing, size, price, imageURL, quantity = 1) {
+    constructor(type, glazing, size, price, imageURL) {
         this.type = type;
         this.glazing = glazing;
-        this.size = size;
+        this.size = size; // size is now considered the pack size (quantity)
         this.price = price;
-        this.imageURL = imageURL; 
-        this.quantity = quantity; 
+        this.imageURL = imageURL;
     }
 
     getTotalPrice() {
-        return (this.price * this.quantity).toFixed(2);
+        return (this.price * this.size).toFixed(2); // Use size as the quantity
     }
 }
-
 
 const rollcardSet = new Set();
 
-
 function calculateTotal() {
-    let total = 0;
-    for (const rollcard of rollcardSet) {
-        total += parseFloat(rollcard.getTotalPrice());
-    }
+    const total = Array.from(rollcardSet).reduce((sum, rollcard) => sum + parseFloat(rollcard.getTotalPrice()), 0);
     document.querySelector('#cart-total-price').textContent = `$${total.toFixed(2)}`;
 }
 
-// Function to add a new roll to the cart
 function addNewCard(rollType, rollGlazing, packSize, basePrice, imageFile) {
-    const imageURL = `../assets/products/${imageFile}`; // Construct the image URL based on the file name
+    const imageURL = `../assets/products/${imageFile}`;
     let rollcard = [...rollcardSet].find(roll => roll.type === rollType && roll.glazing === rollGlazing && roll.size === packSize);
 
-    if (rollcard) {
-        rollcard.quantity += 1; // Update quantity if roll already exists in the cart
-    } else {
+    if (!rollcard) {
         rollcard = new Roll(rollType, rollGlazing, packSize, basePrice, imageURL);
         rollcardSet.add(rollcard);
     }
 
-    createElement(rollcard); // Create and append the element for the roll
-    calculateTotal(); // Update the total price
+    createElement(rollcard);
+    calculateTotal();
 }
 
-// Function to create an element for a roll in the cart
 function createElement(roll) {
-    // Check if the roll already exists in the DOM
-    let existingElement = document.querySelector(`.cart-item[data-type='${roll.type}'][data-glazing='${roll.glazing}'][data-size='${roll.size}']`);
+    const existingElement = document.querySelector(`.cart-item[data-type='${roll.type}'][data-glazing='${roll.glazing}'][data-size='${roll.size}']`);
+    
     if (existingElement) {
-        // Update the quantity and total price in the existing element
-        const quantityElement = existingElement.querySelector('.card-quantity');
         const rollPriceElement = existingElement.querySelector('.card-price');
-        roll.quantity += 1; // Increment the quantity
-        quantityElement.textContent = `Quantity: ${roll.quantity}`;
-        rollPriceElement.textContent = `$${roll.getTotalPrice()}`; // Update the total price
+        rollPriceElement.textContent = `$${roll.getTotalPrice()}`;
     } else {
-        const template = document.querySelector('#rollcart-template');
-        const clone = template.content.cloneNode(true);
-
-        // Set attributes to identify this roll
+        const clone = document.querySelector('#rollcart-template').content.cloneNode(true);
         const cartItemElement = clone.querySelector('.cart-item');
-        cartItemElement.setAttribute('data-type', roll.type);
-        cartItemElement.setAttribute('data-glazing', roll.glazing);
-        cartItemElement.setAttribute('data-size', roll.size);
 
-        const rollImageElement = clone.querySelector('.card-url');
-        const rollTitleElement = clone.querySelector('.card-title');
-        const rollGlazeElement = clone.querySelector('.card-glaze');
-        const rollSizeElement = clone.querySelector('.card-size');
-        const rollPriceElement = clone.querySelector('.card-price');
-        const quantityElement = clone.querySelector('.card-quantity');
-        const removeButton = clone.querySelector('.remove-cart');
+        cartItemElement.dataset.type = roll.type;
+        cartItemElement.dataset.glazing = roll.glazing;
+        cartItemElement.dataset.size = roll.size;
 
-        // Set the content for the cloned template
-        rollImageElement.src = roll.imageURL; 
-        rollTitleElement.textContent = roll.type; 
-        rollGlazeElement.textContent = `Glazing: ${roll.glazing}`; 
-        rollSizeElement.textContent = `Pack Size: ${roll.size}`; 
-        rollPriceElement.textContent = `$${roll.getTotalPrice()}`; 
-        quantityElement.textContent = `Quantity: ${roll.quantity}`;
+        clone.querySelector('.card-url').src = roll.imageURL; 
+        clone.querySelector('.card-title').textContent = roll.type; 
+        clone.querySelector('.card-glaze').textContent = `Glazing: ${roll.glazing}`; 
+        clone.querySelector('.card-size').textContent = `Pack Size: ${roll.size}`; 
+        clone.querySelector('.card-price').textContent = `$${roll.getTotalPrice()}`;
 
-        // Add an event listener to the remove button
-        removeButton.addEventListener('click', () => {
-            rollcardSet.delete(roll); // Remove roll from the set
-            document.querySelector('#cart-items').removeChild(cartItemElement); // Remove the item from the DOM
-            calculateTotal(); // Update total price after removal
+        clone.querySelector('.remove-cart').addEventListener('click', () => {
+            rollcardSet.delete(roll);
+            document.querySelector('#cart-items').removeChild(cartItemElement);
+            calculateTotal();
         });
 
-        // Append the clone to the DOM
         document.querySelector('#cart-items').appendChild(clone);
     }
 }
