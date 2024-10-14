@@ -250,10 +250,18 @@ h2 {
 }
 
 .card-url {
-  max-width: 100px; /* Adjust this value as needed */
-  max-height: 100px; /* Adjust this value as needed */
-  width: auto; /* Maintain aspect ratio */
-  height: auto; /* Maintain aspect ratio */
+    width: 200px;
+    height: 200px;
+    border:2px solid #000000; margin:5px;
+    align-items: right;
 }
 
+.remove-cart {
+  font-size: 15px;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
 
