@@ -235,11 +235,15 @@ How would you use Generative AI responsibly?
 
 ## Feedback Summary
 
-Summarize all the critiques you received during the lab session (\~300 words). 
+* Portfolio Feedback: They all liked the idea of the interactive timeline. Ways to make it more interactive and more storytelling is to have a cursor with an icon that's personalized to me. For case study page use a timeline for steps of the case study instead of the time. 
+
+* Space Mission Tracker: Suggested to be more accessibile for people using screen readers. Also I need to think more about how to deal with the amount of information. They agreed with me that I should just stick to missions in the United States since if I did international that would be a lot of information. The other critique was also needing to think about how to sort everything and to probably have some kind of sorting button. 
+
+* Smoothie Builder: A suggestion was to add a list of favorite smoothies, and to have the site tell you the flavor profile of the smooothie. Someone raised a good question of, "How will you calculate the nutrition facts if you don’t have a measurement option?" So I will need to add in a measurement option so I can quantify the nutrition. 
 
 ## Feedback Digestion
 
-Digest the feedback you got in the lab (\~300 words). Indicate which critique you will act on in your next design and why you chose to incorporate/dismiss pieces of critique.
+I have decided to go with my personal portfolio as my final project for this semester. I like the aspect of the storytelling and making something that's a bit more personal to me. I really like the ideas and questions my group raised when I was presenting my project. I will be adding in more elements of interactivity and storytelling by making my cursor have an icon that travels with it when the mouse moves. I will also keep the timeline of it. 
 
 
 
