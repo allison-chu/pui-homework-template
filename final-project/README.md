@@ -162,9 +162,11 @@ Outline weekly milestones to plan your expected implementation progress until th
   - [ ] ...
   
 - [ ] Week 10 Nov 4 \- Nov 8:   
-  - [ ] FP2 due
+  - [x] FP2 due
+  - 
 
 - [ ] Week 11 Nov 11 \- Nov 15:  
+    - 
 - [ ] Week 12 Nov 18 \- Nov 22:   
 - [ ] Week 13 Nov 25 \- Nov 29:  
 
@@ -195,6 +197,8 @@ Outline how you plan to use Generative AI tools to aid in the implementation (\~
 ### *Responsible Use*
 
 How would you use Generative AI responsibly? 
+
+I would use it to just help me to refine my ideas. I won't use it to replace my critical thinking I'll just use it as a tool.
 
 ---
 
