@@ -125,7 +125,7 @@ Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-gener
 
 ## Project Description
 
-Briefly restate your motivation and a short description of your project.
+My current portfolio is too cookie-cutter. It does have all of my projects showcased but it’s not as visually appealing or personalized as it could be. I want my portfolio to be more eye-catching and include interactive elements and animations. 
 
 ## High-Fi Prototypes
 
@@ -140,8 +140,7 @@ A brief description and summary of the user feedback (\<100 words, 2 images)
 …
 
 ## Usability Test
-
-Discuss the user feedback you got during the evaluation / usability test (\~300 words). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design. 
+During the usability test i gave the users two tasks. The tasks were pretty simple but the first task was for the user to navigate into my second project on the home page. The second task was to navigate back to the home page after going into my second project. The suggestions were to make the projects a little more unified so that the text would be on one side and the project would be on the other. 
 
 ## Updated Designs
 
