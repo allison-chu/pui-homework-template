@@ -158,24 +158,32 @@ Outline weekly milestones to plan your expected implementation progress until th
 
 - [ ] Week 9 Oct 28 \- Nov 1:
   - [X] FP1 due
-  - [ ] ...
+  - [x] Prototype my designs
+  - [x] Test my designs
+  - [x] Synthesize the results of the user testing
+
   
-- [ ] Week 10 Nov 4 \- Nov 8:   
+- [x] Week 10 Nov 4 \- Nov 8:   
   - [x] FP2 due
-  - 
+  - [x] Incorporate critiques from user testing
+  - [x] Map out implementation plan
 
 - [ ] Week 11 Nov 11 \- Nov 15:  
-    - 
+    - [ ] Implement HTML/CSS
+    - [ ] Start on JS and functionality (implement at least 1 feature)
 - [ ] Week 12 Nov 18 \- Nov 22:   
+    - [ ] FP3 due
+    - [ ] Implement the rest of the designs
+    - [ ] Make sure site is accessible
 - [ ] Week 13 Nov 25 \- Nov 29:  
-
   - [ ] Thanksgiving  
+  - [ ] Prepare final designs and presentation 
 - [ ] Week 14 Dec 2 \- Dec 6:  
   - [ ] FP4 due 
 
 ### *Libraries and Other Components*
 
-List the JS libraries and other components (if applicable) that you plan to use. 
+I plan to use react.js to build out my UI. I also plan to use Framer for my transitions and animations
 * 
 
 
@@ -188,10 +196,9 @@ Outline how you plan to use Generative AI tools to aid in the implementation (\~
  What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
 
 * ChatGPT  
-  * I will use it for … because it can help me …  
-  * I will not use it for … because it might not be able to help me with …   
-* GitHub Copilot  
-* ...
+  * I will use it for refining my ideas because it might help me think outside the box.
+  * I will not use it for coding my entire website since that won't help me learn.  
+
 
 ### *Responsible Use*
 
