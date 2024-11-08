@@ -131,16 +131,16 @@ My current portfolio is too cookie-cutter. It does have all of my projects showc
 
 ### *Prototype 1*
 
-![title for prototype1](images/prototype1.png)
-
-A brief description and summary of the user feedback (\<100 words, 2 images) 
+![Home Page](images/fp2.1.1.png)
 
 ### *Prototype 2*
 
-…
+![Project Page](images/fp2.1.2.png)
 
 ## Usability Test
 During the usability test i gave the users two tasks. The tasks were pretty simple but the first task was for the user to navigate into my second project on the home page. The second task was to navigate back to the home page after going into my second project. The suggestions were to make the projects a little more unified so that the text would be on one side and the project would be on the other. 
+
+The feedback given was that my current designs might pigeon-hole me too much in that recruiters may think I only want to work for NASA and the aerospace industry so I should change the blue color into something else and not put the rocket animation next to my name. Otherwise, they loved the accent color since it brought out a pop of color against the dark background. Another piece of feedback was that the navigation bar was oddly spaced and that I should make images have a radius instead of it being pointy to match current design trends. My projects were also presented in not the most efficient way since I should add a call to action button and to make it known where the project actually ends. Majority of the feedback was for the home page.
 
 ## Updated Designs
 
