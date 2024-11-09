@@ -133,9 +133,13 @@ My current portfolio is too cookie-cutter. It does have all of my projects showc
 
 ![Home Page](images/fp2.1.1.png)
 
+The home page was well-recieved in the user feedback session. They liked the accent color and the dark theme. They thought NASA was very impressive but they said I need to make sure I don't pigeon-hole myself into making it seem like I only want to work for NASA and the aerospace industry. I also needed to put a call to action button for my projects so that the user knows when the project ends instead of infinite scrolling. 
+
 ### *Prototype 2*
 
 ![Project Page](images/fp2.1.2.png)
+
+The majority of the feedback was for my Home page. My projects page didn't get as much feedback since the home page is the main focus of the portfolio since that's what people would generally see first. I think in the future when I'm implementing my designs I will add more pictures to it and try to match the darker theme of my home page.
 
 ## Usability Test
 During the usability test i gave the users two tasks. The tasks were pretty simple but the first task was for the user to navigate into my second project on the home page. The second task was to navigate back to the home page after going into my second project. The suggestions were to make the projects a little more unified so that the text would be on one side and the project would be on the other. 
@@ -144,11 +148,13 @@ The feedback given was that my current designs might pigeon-hole me too much in 
 
 ## Updated Designs
 
-Show screenshots of your updated design based on the user feedback (\<100 words, \~2 images).
+![Home Page](images/fp2.2.2.png)
+![Project Page](images/fp2.1.2.png)
+
 
 ## Feedback Summary
 
-Summarize the feedback you received in the lab session and discuss how it influenced your design (\~300 words). 
+For the home page I changed the color of the blue to the color green based on the feedback I got that blue might look too much like "space." I also moved the rocket animation down to my actual NASA project section instead of having it at the top. I changed the radius of my images to have a curved radius instead of it being pointy. I also included a call to action button and made my images all on one side to make my projects section more readable. 
 
 ## Milestones
 
