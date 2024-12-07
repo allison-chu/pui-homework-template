@@ -78,7 +78,7 @@ My original mockups included the dark theme and blue accents. That was the main 
 
 What challenges did you experience in implementing your website? (2-4 sentences max)
 
-The biggest challenge was implementing the scroll wheel aspect on the left side. Sometimes the scroll view would highlight the wrong projects, not highlight the correct project, or it just wouldn't work. The other big challenge was integrating the light to dark mode aspect, but the scroll wheel was definitly the most challenging. Another small thing was just knowing the correct syntax for stuff, but I figured out that quickly by simply looking it up or asking ChatGPT.
+The biggest challenge was implementing the scroll wheel aspect on the left side, I had to learn a ton about Intersection Observer. Sometimes the scroll view would highlight the wrong projects, not highlight the correct project, or it just wouldn't work. The other big challenge was integrating the light to dark mode aspect, but the scroll wheel was definitly the most challenging. Another small thing was just knowing the correct syntax for stuff, but I figured out that quickly by simply looking it up or asking ChatGPT.
 
 ## Part 6: Generative AI Use and Reflection
 
