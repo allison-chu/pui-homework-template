@@ -56,31 +56,40 @@ projectTitles.forEach((title, index) => {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const text = "Hello! My name is Allison Chu";
-    const typedTextSpan = document.getElementById("typed-text");
-    const cursorSpan = document.querySelector(".cursor");
-  
-    let i = 0;
-    const typingDelay = 100;
-  
-    function type() {
-      if (i < text.length) {
-        typedTextSpan.textContent += text.charAt(i);
-        i++;
-        setTimeout(type, typingDelay);
-      } else {
-        cursorSpan.style.display = 'none';
-      }
-    }
-  
-    if (typedTextSpan) {
-      setTimeout(type, typingDelay + 1000);
-    }
+//typed.js
+document.addEventListener("DOMContentLoaded", () => {
+  new Typed("#typed-text", {
+    strings: ["Hello! My name is Allison Chu"], 
+    typeSpeed: 100, //in milliseconds
+    loop: false, 
+    showCursor: true, 
+    cursorChar: "|", 
   });
+});
+
 
   //Had such a tough time with intersecion observer, here's the documentation i used so i can cite my sources
   // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
   // https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver
   // https://www.youtube.com/watch?v=2IbRtjez6ag&ab_channel=WebDevSimplified
   // https://dev.to/elvisans/exploring-the-basis-of-the-intersectionobserver-api-17cb
+
+  //Light and dark theme
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('light-theme');
+        
+        // Update button text based on current theme
+        if (body.classList.contains('light-theme')) {
+            themeToggle.textContent = 'Dark Mode'; // Change text to indicate dark mode is available
+            localStorage.setItem('theme', 'light');
+        } else {
+            themeToggle.textContent = 'Light Mode'; // Change text to indicate light mode is available
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+});

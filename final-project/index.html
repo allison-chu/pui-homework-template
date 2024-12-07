@@ -10,11 +10,13 @@
   <header class="navbar">
     <div class="logo">ALLISON</div>
     <nav>
-      <a href="about.html">About</a>
-      <a href="#my-work">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="#my-work" class="nav-link">Projects</a>
+      <a href="https://drive.google.com/file/d/1IgbAESyCS_0Asc-OqY7gkRK20dOaiyf9/view?usp=sharing" class="nav-link">Resume</a>
+      <a href="mailto:im.allison.chu@gmail.com" class="nav-link">Contact</a>
+      <button id="theme-toggle" class="theme-toggle">Light Mode</button>
+  </nav>
   </header>
 
   <section class="hero">
@@ -25,8 +27,12 @@
           Currently pursuing my Master's in Human-Computer Interaction at Carnegie Mellon University.
         </p>
         <div class="hero-buttons">
-          <button class="chat-btn">Let's Chat!</button>
+          <a href="mailto:im.allison.chu@gmail.com">
+            <button class="chat-btn">Let's Chat!</button>
+          </a>
+          <a href="https://drive.google.com/file/d/1IgbAESyCS_0Asc-OqY7gkRK20dOaiyf9/view?usp=sharing">
           <button class="resume-btn">Resume</button>
+          </a>
         </div>
       </div>
       <div class="hero-image">
@@ -45,6 +51,7 @@
   <section id="my-work" class="my-work">
     <h1 class="section-header">My Projects</h1>
     <!-- Project 1 -->
+    <a href="project1.html" class="project-link">
     <div class="work-container">
       <!-- Left Side: Project Details -->
       <div class="work-text">
@@ -61,7 +68,7 @@
         <img src="../final-project/images/MSJ09895.png" alt="Project Image" />
       </div>
     </div>
-  
+  </a>
     <!-- Project 2 -->
     <div class="work-container">
       <!-- Left Side: Project Details -->
@@ -109,6 +116,7 @@
   
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </body>
 </html>

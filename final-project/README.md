@@ -18,7 +18,7 @@ Describe your website (300 words).
 * What information do you convey with your website?   
 * How is it interesting and engaging? 
 
-The purpose of my website was to create a personal portfolio for me to feature my work as a UX Designer and start applying for jobs. The target audience is for recruiters, faculty, and fellow peers to see the work I have done in school and in my career. The purpose is so I am able to showcase my work all in one place. I did have a portfolio before, but my old portfolio was a little too rigid and there wasn't much space for me to express my creativity more. I also wanted a cleaner, sleek look which is why I wanted to go with a default dark theme with the blue cyan color as the accent. It fits my personal style a lot more and showcases my work effectively. The information I'm conveying with my website is a collection of the work I have done so far. I made it interesting and engaging by the visual aspect of the modern sleep look, and also made it more interesting with the typing animation, text animations, and having the titles of my project on the left side pop up when that specific project is in view. Another aspect that I decided to add during the last few days of working on this project was the ability to change from dark mode to light mode. 
+The purpose of my website was to create a personal portfolio for me to feature my work as a UX Designer and start applying for jobs. The target audience is for recruiters, faculty, and fellow peers to see the work I have done in school and in my career. The purpose is so I am able to showcase my work all in one place. I did have a portfolio before, but my old portfolio was a little too rigid and there wasn't much space for me to express my creativity more. I also wanted a cleaner, sleek look which is why I wanted to go with a default dark theme with the blue cyan color as the accent. It fits my personal style a lot more and showcases my work effectively. The information I'm conveying with my website is a collection of the work I have done so far. I made it interesting and engaging by the visual aspect of the modern sleep look, and also made it more interesting with the typing animation, text animations, and having the titles of my project on the left side pop up when that specific project is in view. Another aspect that I decided to add during the last few days of working on this project was the ability to change from dark mode to light mode. I utilized the typed.js library and the intersection observer web API.
 
 ## Part 2: User Interaction
 
@@ -29,7 +29,7 @@ How a user would interact with your website? For each step, briefly but clearly 
 3. Hover interaction. Hover over each skill and the skill will highlight
 4. Toggle between dark and light mode. Toggle between light and dark mode.
 5. Scrolling interaction. Scroll down the home page/projects section and a scroll wheel of the titles of my projects will show up and highlight as each individual project comes up.
-6. Typing interaction. As you load the page, an animation of my header being typed will show. 
+6. Typing interaction with the typed.js library. As you load the page, an animation of my header being typed will show. 
 6. Links
     - Home: Links to home page
     - About: Links to about page
