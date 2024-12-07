@@ -18,36 +18,75 @@ Describe your website (300 words).
 * What information do you convey with your website?   
 * How is it interesting and engaging? 
 
+The purpose of mmy website was to create a personal portfolio for me to feature my work as a UX Designer and start applying for jobs. The target audience is for recruiters, faculty, and fellow peers to see the work I have done in school and in my career. The purpose is so I am able to showcase my work all in one place. I did have a portfolio before, but my old portfolio was a little too rigid and there wasn't much space for me to express my creativity more. I also wanted a cleaner, sleek look which is why I wanted to go with a default dark theme with the blue cyan color as the accent. It fits my personal style a lot more and showcases my work effectively. The information I'm conveying with my website is a collection of the work I have done so far. I made it interesting and engaging by the visual aspect of the modern sleep look, and also made it more interesting with the typing animation, text animations, and having the titles of my project on the left side pop up when that specific project is in view. Another aspect that I decided to add during the last few days of working on this project was the ability to change from dark mode to light mode. 
+
 ## Part 2: User Interaction
 
 How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
 
-1. Interaction type. Click on X on page Y / scroll on page X, etc.  
-2. 
+1. Hover interaction. Hover over the nav bar and the text will highlight 
+2. Hover interaction. Hover over each individual project and the project border will highlight and expand
+3. Hover interaction. Hover over each skill and the skill will highlight
+4. Toggle between dark and light mode. Toggle between light and dark mode.
+5. Scrolling interaction. Scroll down the home page/projects section and a scroll wheel of the titles of my projects will show up and highlight as each individual project comes up.
+6. Typing interaction. As you load the page, an animation of my header being typed will show. 
+6. Links
+    - Home: Links to home page
+    - About: Links to about page
+    - Projects: Links to the projects section
+    - Resume: Links to my resume
+    - Contact: links to email 
+6. Buttons
+  - Let's Chat: links to sending me an email
+  - Resume: links to my resume
+
 
 ## Part 3: External Tool
 
 Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
 
-1. Name of tool1  
+1. Typing animation 
    * Why did you choose to use it over other alternatives? (2 sentences max)  
+    The typing animation for my header when you load the page adds a little bit of motion to my page. I originally thought of just having the text slide in, but I thought the typing effect would add to the page more. 
    * How you used it? (2 sentences max)  
+      I used it for the header of my hero section when you load the page.
    * What does it add to your website? (2 sentences max)  
-2. Name of tool2
+    It adds motion and an animation effect when you load the page. 
+2. Text animations on hover
+ * Why did you choose to use it over other alternatives? (2 sentences max)  
+    I was thinking that on portfolios, there can be a lot of text. This was my way of making reading a little more interactive and fun, other effects didn't give the same appeal. 
+   * How you used it? (2 sentences max)  
+      I used it for my navigation section, skill boxes, and section boxes for my projects. 
+   * What does it add to your website? (2 sentences max)  
+    It adds motion and an animation effect when you hover over certain text and boxes. 
+3. Scroll wheel navigation on the left side
+ * Why did you choose to use it over other alternatives? (2 sentences max)  
+    During my initial mockups, I was thinking of having a scrollable timeline. This then evolved into a scrollable project title section where each title would light up as the user scrolls on the page and I used this over other alternatives, since just having dates wouldn't add as much.  
+   * How you used it? (2 sentences max)  
+      I used it for scrolling, where when you scroll on the page, each project lights up. This also helps give a brief overview of all my projects. 
+   * What does it add to your website? (2 sentences max)  
+    It gives a brief high-level overview of all my projects and gives a visual appeal.
+
 
 ## Part 4: Design Iteration
 
 Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
 
+My original mockups included the dark theme and blue accents. That was the main thing I kept throughout the whole process, but the main things I changed were adding more animations and changing the timeline to the scroll wheel view for my projects. I also made my section boxes a little more visually appealing by adding the skill boxes and creating hover animations for that and the entire sections. One of the biggest things I added was the ability to change the dark mode to light mode. 
+
 ## Part 5: Implementation Challenge
 
 What challenges did you experience in implementing your website? (2-4 sentences max)
+
+The biggest challenge was implementing the scroll wheel aspect on the left side. Sometimes the scroll view would highlight the wrong projects, not highlight the correct project, or it just wouldn't work. The other big challenge was integrating the light to dark mode aspect, but the scroll wheel was definitly the most challenging. Another small thing was just knowing the correct syntax for stuff, but I figured out that quickly by simply looking it up or asking ChatGPT.
 
 ## Part 6: Generative AI Use and Reflection
 
 Describe how you used Generative AI tools to create this final project (fill in the following information, write \~500 words in total).
 
 Document your use of all GenAI tools — ChatGPT, Copilot, Claude, Cursor, etc. using the template below. Add/Delete rows or bullet points if needed, and replace Tool1/Tool2 with the name of the tool.
+
+The only AI tool I've ever really used is ChatGPT. I used it to get quick help on syntax errors and quick explanations on how do do things. An example is 
 
 ### Usage Experiences by Project Aspects
 
@@ -59,8 +98,8 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 | Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Tool1 | Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool1 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
+| ChatGPT | Usage | No | Yes | No | Yes | Yes/No |
+| ChatGPT | Productivity | 0 | 7 | 0 | 0 | 7 |
 | Tool2| Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
 | Tool2 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
 
@@ -69,40 +108,31 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 > Impact on your design and plan 
 * It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: It helped me figure out what other animations I could add and help for the syntax of these animations. I did also use it to debug, this was very helpful since if I debugged by myself it would have taken me a very long time to figure out my erros. 
 * It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: I ended up not really using AI to refine my ideas. The only part that I asked for help on refining my ideas were when I asked it what other animations I could put for my project. I also asked it how feasible certain things were, like how hard is implementing light and dark mode. This helped ease my worries and assess how much time something could take. 
 * GenAI tool did/did not influence my final design and implementation plan because … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: Same explanation as above. I didn't really use AI to refine my ideas and final design. At most, it helped me figure out what other animations I could add and help for the syntax of these animations. 
 
 > Use patterns
 * I accepted the generations when …  For example, 
-  1. Tool1: this tool once suggested … and I adjusted my design according to the suggestion because … 
-  2. Tool2: 
+  1. ChatGPT this tool once suggested I add a typing animation and I adjusted my design according to the suggestion because I wanted another animation but I wasn't sure what. 
 * I critiqued/evaluated the generated suggestions by … For example, 
-  1. Tool1: this tool once suggested … but I modified/rejected the suggestion because … 
-  2. Tool2: 
+  1. ChatGPT: this tool once suggested that I add more hovering effects but I rejected the suggestion because I already had a lot of hovering animations. 
 
 
 > Pros and cons of using GenAI tools
 * Pros
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: Quick explanations of syntax errors and quick explanations and links to documentation for implementing things I wasn't as familiar with. 
 * Cons
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: Sometimes what it said wasn't all that helpful, so I'd just look up documentation or other help on Google
 
 
 ### Usage Log
 
 Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
 
-1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
-2. [GitHub Copilot (VSCode)](https://code.visualstudio.com/docs/copilot/copilot-chat#:~:text=You%20can%20export%20all%20prompts%20and%20responses%20for%20a%20chat%20session%20in%20a%20JSON%20file%20with%20the%20Chat%3A%20Export%20Session...%20command%20(workbench.action.chat.export)%20in%20the%20Command%20Palette.): export chat histories relevant to this project.
-
+1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) 
 ---
 
 # **FP3 \- Final Project Check-in**
@@ -111,11 +141,39 @@ Document the changes and progress of your project. How have you followed or chan
 
 ## Implementation Plan Updates
 
-- [ ] ...
+- [ ] Week 9 Oct 28 \- Nov 1:
+  - [X] FP1 due
+  - [x] Prototype my designs
+  - [x] Test my designs
+  - [x] Synthesize the results of the user testing
+
+  
+- [x] Week 10 Nov 4 \- Nov 8:   
+  - [x] FP2 due
+  - [x] Incorporate critiques from user testing
+  - [x] Map out implementation plan
+
+- [x] Week 11 Nov 11 \- Nov 15:  
+    - [x] Implement HTML/CSS
+    - [x] Start on JS and functionality (implement at least 1 feature)
+    - [x] Pick which library to use
+    - [x] Add more animations 
+- [x] Week 12 Nov 18 \- Nov 22:   
+    - [x] FP3 due
+    - [x] Implement the rest of the designs
+    - [x] Make sure site is accessible
+- [x] Week 13 Nov 25 \- Nov 29:  
+  - [x] Thanksgiving  
+  - [x] Prepare final designs and presentation 
+- [x] Week 14 Dec 2 \- Dec 6:  
+  - [x] Implement light and dark mode
+  - [x] Make sure library is implemented
+  - [x] Ensure site is accessible 
+  - [x] FP4 due 
 
 ## Generative AI Use Plan Updates
 
-- [ ] ...
+- I ended up not really using AI to refine my ideas. The only part that I asked for help on refining my ideas were when I asked it what other animations I could put for my project. I also asked it how feasible certain things were, like how hard is implementing light and dark mode. This helped ease my worries and assess how much time something could take. 
 
 Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-generative-ai-use-and-reflection).
 
