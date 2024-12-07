@@ -1,10 +1,10 @@
-// Select all the necessary elements
+//Select all the necessary elements
 const workContainers = document.querySelectorAll('.work-container');
 const projectTitles = document.querySelectorAll('.project-title');
 const projectNav = document.querySelector('.project-nav');
 const heroSection = document.querySelector('.hero');
 
-// Updated Intersection Observer options
+//Intersection Observer options
 const observerOptions = {
   threshold: [0, 0.2, 0.4, 0.6, 0.8, 1],
   rootMargin: '-20% 0px -20% 0px'
@@ -12,7 +12,7 @@ const observerOptions = {
 
 let currentActiveIndex = -1;
 
-// Create Intersection Observer for work containers
+//Create Intersection Observer for work containers
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     const index = Array.from(workContainers).indexOf(entry.target);
@@ -27,10 +27,10 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Start observing all work containers
+//Start observing all work containers
 workContainers.forEach(container => observer.observe(container));
 
-// Handle navigation visibility on scroll
+//Handle navigation visibility on scroll
 window.addEventListener('scroll', () => {
   const myWorkSection = document.getElementById('my-work');
   const myWorkTop = myWorkSection.getBoundingClientRect().top;
@@ -43,7 +43,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Add click event listeners to project titles with offset
+//Add click event listeners to project titles with offset
 projectTitles.forEach((title, index) => {
   title.addEventListener('click', () => {
     const offset = window.innerHeight * 0.3; // 30% of viewport height
@@ -78,3 +78,9 @@ document.addEventListener('DOMContentLoaded', function() {
       setTimeout(type, typingDelay + 1000);
     }
   });
+
+  //Had such a tough time with intersecion observer, here's the documentation i used so i can cite my sources
+  // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+  // https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver
+  // https://www.youtube.com/watch?v=2IbRtjez6ag&ab_channel=WebDevSimplified
+  // https://dev.to/elvisans/exploring-the-basis-of-the-intersectionobserver-api-17cb
