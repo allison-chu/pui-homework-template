@@ -18,7 +18,7 @@ Describe your website (300 words).
 * What information do you convey with your website?   
 * How is it interesting and engaging? 
 
-The purpose of mmy website was to create a personal portfolio for me to feature my work as a UX Designer and start applying for jobs. The target audience is for recruiters, faculty, and fellow peers to see the work I have done in school and in my career. The purpose is so I am able to showcase my work all in one place. I did have a portfolio before, but my old portfolio was a little too rigid and there wasn't much space for me to express my creativity more. I also wanted a cleaner, sleek look which is why I wanted to go with a default dark theme with the blue cyan color as the accent. It fits my personal style a lot more and showcases my work effectively. The information I'm conveying with my website is a collection of the work I have done so far. I made it interesting and engaging by the visual aspect of the modern sleep look, and also made it more interesting with the typing animation, text animations, and having the titles of my project on the left side pop up when that specific project is in view. Another aspect that I decided to add during the last few days of working on this project was the ability to change from dark mode to light mode. 
+The purpose of my website was to create a personal portfolio for me to feature my work as a UX Designer and start applying for jobs. The target audience is for recruiters, faculty, and fellow peers to see the work I have done in school and in my career. The purpose is so I am able to showcase my work all in one place. I did have a portfolio before, but my old portfolio was a little too rigid and there wasn't much space for me to express my creativity more. I also wanted a cleaner, sleek look which is why I wanted to go with a default dark theme with the blue cyan color as the accent. It fits my personal style a lot more and showcases my work effectively. The information I'm conveying with my website is a collection of the work I have done so far. I made it interesting and engaging by the visual aspect of the modern sleep look, and also made it more interesting with the typing animation, text animations, and having the titles of my project on the left side pop up when that specific project is in view. Another aspect that I decided to add during the last few days of working on this project was the ability to change from dark mode to light mode. 
 
 ## Part 2: User Interaction
 
@@ -86,7 +86,7 @@ Describe how you used Generative AI tools to create this final project (fill in 
 
 Document your use of all GenAI tools — ChatGPT, Copilot, Claude, Cursor, etc. using the template below. Add/Delete rows or bullet points if needed, and replace Tool1/Tool2 with the name of the tool.
 
-The only AI tool I've ever really used is ChatGPT. I used it to get quick help on syntax errors and quick explanations on how do do things. An example is 
+The only AI tool I've ever really used is ChatGPT. I used it to get quick help on syntax errors and quick explanations on how do do things. An example of a simple thing I needed help with was that I forgot how you link the nav to certain sections. It was also pretty helpful for debugging. When I was a Computer Science major in undergrad, debugging would take a painful long amount of time, but using ChatGPT to help debug has been so useful. In this project I specifically used it to help debug the scroll view on the left side containing the names of all my projects. I also used it to generate some ideas. I was surprised I didn't really use it more for refining my design and original mockups. Maybe it would have been good to do that, but the only help I got from it for my design was when I asked it what other animations or interactions I could add since I definitely didn't have enough in the beginning. It gave me the idea of a typing animation and also linked to helpful documentation about that and other aspects. It also helped me determine how feasible certain things were, such as the scroll view with the names of my projects and I also asked it how feasible the light and dark theme would be. ChatGPT was very helpful in that aspect and in providing documentation that actually helped a lot. 
 
 ### Usage Experiences by Project Aspects
 
@@ -99,9 +99,8 @@ For the following aspects of your project, edit the corresponding table cell to 
 | Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | ChatGPT | Usage | No | Yes | No | Yes | Yes/No |
-| ChatGPT | Productivity | 0 | 7 | 0 | 0 | 7 |
-| Tool2| Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool2 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
+| ChatGPT | Productivity | 0 | 7 | 0 | 7 | 0 |
+
 
 
 ### Usage Reflection
@@ -132,7 +131,7 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
 
-1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) 
+1. [ChatGPT](https://chatgpt.com/share/6753cf3f-97d0-8011-a616-697866c3b4b9) 
 ---
 
 # **FP3 \- Final Project Check-in**
