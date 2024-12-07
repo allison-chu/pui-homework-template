@@ -67,6 +67,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  new Typed("#about-me-typed", {
+    strings: ["About Me"],
+    typeSpeed: 100,
+    loop: false,
+    showCursor: true,
+    cursorChar: "|",
+  });
+});
+
 
   //Had such a tough time with intersecion observer, here's the documentation i used so i can cite my sources
   // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
@@ -79,6 +89,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
+    //So the theme will be saved across all pages 
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        body.classList.add('light-theme');
+        themeToggle.textContent = 'Dark Mode'; 
+    } else {
+        themeToggle.textContent = 'Light Mode'; 
+    }
 
     themeToggle.addEventListener('click', () => {
         body.classList.toggle('light-theme');

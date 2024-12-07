@@ -3,39 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Allison Chu</title>
+    <title>About Me - Allison Chu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="navbar">
-      <div class="logo">ALLISON</div>
-      <nav>
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="index.html#my-work" class="nav-link">Projects</a>
-        <a href="https://drive.google.com/file/d/1IgbAESyCS_0Asc-OqY7gkRK20dOaiyf9/view?usp=sharing" class="nav-link">Resume</a>
-        <a href="mailto:im.allison.chu@gmail.com" class="nav-link">Contact</a>
-    </nav>
+        <div class="logo">ALLISON</div>
+        <nav>
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="index.html#my-work">Projects</a>
+          <a href="https://drive.google.com/file/d/1IgbAESyCS_0Asc-OqY7gkRK20dOaiyf9/view?usp=sharing" class="nav-link">Resume</a>
+          <a href="mailto:im.allison.chu@gmail.com" class="nav-link">Contact</a>
+          <button id="theme-toggle" class="theme-toggle">Light Mode</button>
+      </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-container">
-          <div class="hero-text">
-
-            <p class="subtitle">
-              About Me
-            </p>
-            <div class="hero-buttons">
-              <button class="chat-btn">Let's Chat!</button>
-              <button class="resume-btn">Resume</button>
+    <section class="about-hero">
+      <h1 class="section-header"><span id="about-me-typed"></span></h1>
+        <div class="about-container animate-slideInLeft">
+            <div class="about-text">
+                <p>Hello! My name is Allison Chu, and I'm a Master's student in Human-Computer Interaction at Carnegie Mellon University. I'm passionate about creating intuitive and accessible user experiences.
+              I have had experiences at NASA, Lockheed Martin Space, and many other projects you can see on my projects page! 
+                  <br><br>Outside of UX, my hobbies include powerlifting, dance, and piano.I also enjoy speaking to and 
+                  inspiring audiences about career and internship advice. Below are some of the events I've spoken at.</p>
             </div>
-          </div>
-          <div class="hero-image">
-            <img src="../PUI-FP/images/hero.png" alt="Hero Image" />
-          </div>
+            <div class="about-image">
+                <img src="../final-project/images/Allison.jpg" alt="Allison Chu">
+            </div>
         </div>
-      </section>
+    </section>
+    <h1 class="section-header">Events I've Spoken At</h1>
+
+    <section class="about-details">
+        <div class="detail-column animate-slideInRight">
+            <img src="../final-project/images/SIRI.png" alt="Detail 1">
+            <h3>JPL-SIRI Speaker Event
+            </h3>
+            <p>I spoke about my time with NASA JPL through the SIRI program to a community college I had attended.</p>
+        </div>
+        <div class="detail-column animate-slideInRight" style="animation-delay: 0.2s;">
+            <img src="../final-project/images/Panel.png" alt="Detail 2">
+            <h3>NASA Internship Panel
+            </h3>
+            <p>I spoke to the members of Women of Aeronautics and Astronautics (WoAA) about internship and career advice specifically in the space industry.</p>
+        </div>
+        <div class="detail-column animate-slideInRight" style="animation-delay: 0.4s;">
+            <img src="../final-project/images/Podcast.png" alt="Detail 3">
+            <h3>NASA Johnson's Podcast
+            </h3>
+            <p>I was featured on NASA Johnson's official podcast to speak about my internship experiences and any advice I have for individuals that want to work with NASA.</p>
+        </div>
+    </section>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </body>
 </html>

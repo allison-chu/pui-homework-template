@@ -292,7 +292,73 @@
     100% { opacity: 1; }
   }
  
-/*Project page animations */
+/*Project page animations and Styling*/
+
+.project-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.content-container {
+    margin-bottom: 60px;
+}
+
+.content-container h2 {
+    color: #4FD0FF;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.tools-timeline {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.project-hero .hero-container {
+    padding: 60px 20px;
+}
+
+.project-hero h1 {
+    font-size: 48px;
+    color: #4FD0FF;
+    margin-bottom: 20px;
+}
+
+.project-hero .subtitle {
+    font-size: 20px;
+    color: #e0e0e0;
+    max-width: 600px;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-out;
+}
+
+.animate-slideInLeft {
+    animation: slideInLeft 1s ease-out forwards; /* Use forwards to maintain end state */
+}
+
+.animate-slideInRight {
+    animation: slideInRight 1s ease-out forwards; /* Use forwards to maintain end state */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -330,6 +396,67 @@
     text-decoration: none;
 }
 
+
+/* About Section */
+.about-hero {
+    background-color: #1e1e1e;
+    padding: 30px 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 50%;
+    font-size: 18px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.detail-column {
+    flex: 1;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.detail-column img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.animate-slideInLeft {
+    animation: slideInLeft 1s ease-out;
+}
+
+.animate-slideInRight {
+    animation: slideInRight 1s ease-out;
+}
+
 /* Light and Dark Theme stuff */
 
 .theme-toggle {
@@ -358,6 +485,17 @@ body.light-theme .hero {
     background-color: #ffffff; 
 }
 
+body.light-theme .navbar nav a {
+    color: #333;
+}
+
+body.light-theme .navbar nav a:hover {
+    color: #4FD0FF; 
+}
+
+body.light-theme .about-hero {
+    background-color: #ffffff;
+}
 body.light-theme .hero-text h1 {
     color: #333; 
     -webkit-background-clip: text;
