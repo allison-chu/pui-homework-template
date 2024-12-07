@@ -54,7 +54,7 @@
     max-width: 1000px; 
     margin: 0 auto; 
   }
-  
+
   .hero-text {
     flex: 1;
     max-width: 50%; 
@@ -337,11 +337,11 @@
 }
 
 .animate-slideInLeft {
-    animation: slideInLeft 1s ease-out forwards; /* Use forwards to maintain end state */
+    animation: slideInLeft 1s ease-out forwards; 
 }
 
 .animate-slideInRight {
-    animation: slideInRight 1s ease-out forwards; /* Use forwards to maintain end state */
+    animation: slideInRight 1s ease-out forwards; 
 }
 
 /* Keyframes for animations */
@@ -532,4 +532,24 @@ body.light-theme .resume-btn {
     background-color: transparent;
     color: #4FD0FF;
     border: 2px solid #4FD0FF;
+}
+
+/* Showing stuff when scrolled to it */
+
+.scroll-hidden {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.slide-in-left {
+    transform: translateX(-100px);
+}
+
+.slide-in-right {
+    transform: translateX(100px);
+}
+
+.scroll-show {
+    opacity: 1;
+    transform: translateX(0);
 }

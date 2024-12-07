@@ -111,3 +111,32 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+// Showing stuff when scrolled to it
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollElements = document.querySelectorAll('.content-container');
+  
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('scroll-show');
+              // Unobserve after animation is triggered
+              observer.unobserve(entry.target);
+          }
+      });
+  }, {
+      threshold: 0.2,
+      rootMargin: '-20% 0px -20% 0px'
+  });
+
+  // Initialize elements
+  scrollElements.forEach((el) => {
+      el.classList.add('scroll-hidden');
+      if (el.classList.contains('animate-slideInLeft')) {
+          el.classList.add('slide-in-left');
+      } else if (el.classList.contains('animate-slideInRight')) {
+          el.classList.add('slide-in-right');
+      }
+      observer.observe(el);
+  });
+});
